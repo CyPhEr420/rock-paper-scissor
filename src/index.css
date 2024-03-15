@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%) 10%,
+    hsl(237, 49%, 15%)
+  );
+  height: 100vh;
+  width: 100vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+:root {
+  --main-game-width: 600px; /* Main game width */
+  --main-game-height: 500px; /* Main game height */
+  --item-sign-width: 220px; /* Item sign width */
+  --item-sign-height: 220px; /* Item sign height */
+  --inner-circle-width: 180px;
+  --inner-circle-height: 180px;
+  --inner-circle-gradient: 150px;
+  --big-item-width: 300px;
+  --big-gradient: 220px;
+  --big-item-height: 300px;
+  --big-inner-width: 260px;
+  --big-inner-height: 260px;
+  --big-img: 130px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --item-sign-width: 200px; /* Item sign width */
+    --item-sign-height: 200px; 
+    --big-item-width: 200px;
+    --big-item-height: 200px;
+    --big-inner-width: 160px;
+    --big-inner-height: 160px;
+    --big-img: 90px;
+    --inner-circle-gradient: 150px;
+    --big-gradient: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --main-game-width: 100%; /* Main game width */
+    --main-game-height: 500px; /* Main game height */
+    --item-sign-width: 200px; /* Item sign width */
+    --item-sign-height: 200px; /* Item sign height */
+    --inner-circle-width: 160px;
+    --inner-circle-height: 160px;
+    --inner-circle-gradient: 120px;
+    /* --big-item-width: 200px;
+    --big-item-height: 200px;
+    --big-inner-width: 160px;
+    --big-inner-height: 160px;
+    --big-img: 90px; */
+  }
+}
+
+

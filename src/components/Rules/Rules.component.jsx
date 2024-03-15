@@ -1,0 +1,32 @@
+import { useState } from 'react'
+import Modal from '../Modal/Modal.component'
+import './rules.styles.css'
+const Rules = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleModal = () => {
+        setIsOpen(prev => !prev);
+    }
+    return (
+        <div className="rules" >
+            <div className="rules-btn" onClick={handleModal}>RULES</div>
+            {isOpen &&
+                (<Modal>
+                    <div className="rule-show">
+                        <div className="rule-header">
+                            <h1>RULES</h1>
+                            <img src="/images/icon-close.svg" alt="close" onClick={handleModal} />
+                        </div>
+
+                        <div className="rule-img">
+                            <img src="/images/image-rules.svg" alt="rules image" />
+                        </div>
+
+                    </div>
+                </Modal>)
+            }
+
+        </div>
+    )
+}
+
+export default Rules

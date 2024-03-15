@@ -1,0 +1,18 @@
+.game-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: var(--main-game-width);
+  height: var(--main-game-height);
+  margin: auto auto;
+  justify-items: center;
+  background-image: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  background-image: none;
+}
