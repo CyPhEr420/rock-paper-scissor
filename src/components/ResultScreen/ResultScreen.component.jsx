@@ -11,7 +11,7 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
     const [winnerClass, setWinnerClass] = useState('');
 
     useEffect(() => {
-        const timeoutId = setTimeout(() => setShowComputerChoice(true), 2000);
+        const timeoutId = setTimeout(() => setShowComputerChoice(true), 1000);
         return () => clearTimeout(timeoutId);
     }, []);
 
@@ -22,7 +22,7 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
             if(winner === "YOU WIN"){
                 handleScore();
             }
-        }, 3000);
+        }, 2000);
         return () => clearTimeout(timeoutId);
     }, [winner]);
 
