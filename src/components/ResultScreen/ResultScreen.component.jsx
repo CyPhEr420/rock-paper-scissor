@@ -19,7 +19,6 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
         const timeoutId = setTimeout(() => {
             setShowResult(true)
             setWinnerClass(winner)
-            console.log("running");
             if(winner === "YOU WIN"){
                 handleScore();
             }
@@ -32,7 +31,7 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
 console.log(winnerClass === winner, winnerClass, winner)
 
     return (
-        <div className={`${showComputerChoice ? "widden" : ""} result-screen`} >
+        <div className={`${showResult ? "widden" : ""} result-screen`} >
 
             <div className="player-choice choice">
                 <h2>You Picked</h2>
