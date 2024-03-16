@@ -7,18 +7,18 @@ import ResultScreen from '../ResultScreen/ResultScreen.component'
 const ITEM_SIGNS = [
     {
         name: "rock",
-        img: "images/icon-rock.svg",
+        img: "/pics/icon-rock.svg",
         key: "1"
     },
     {
         name: "paper",
-        img: "images/icon-paper.svg",
+        img: "/pics/icon-paper.svg",
         key: "2"
 
     },
     {
         name: "scissor",
-        img: "images/icon-scissors.svg",
+        img: "/pics/icon-scissors.svg",
         key: "3",
         classes: "span-2"
 

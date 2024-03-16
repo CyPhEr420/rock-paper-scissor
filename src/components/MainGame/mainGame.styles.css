@@ -8,7 +8,7 @@
   height: var(--main-game-height);
   margin: auto auto;
   justify-items: center;
-  background-image: url("images/bg-triangle.svg");
+  background-image: url("/pics/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
