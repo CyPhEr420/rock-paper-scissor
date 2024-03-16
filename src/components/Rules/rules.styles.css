@@ -79,5 +79,7 @@
 
   .close-m-icon {
     display: inline;
+    margin-top: 35px;
+    cursor: pointer;
   }
 }

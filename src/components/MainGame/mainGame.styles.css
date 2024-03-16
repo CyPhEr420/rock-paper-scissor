@@ -20,5 +20,6 @@
 @media (max-width: 500px) {
   .game-container {
     background-size: 300px;
+    margin-top: 4rem;
   }
 }

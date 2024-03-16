@@ -79,6 +79,9 @@ h2 {
     flex-direction: column-reverse;
   }
 
+  .result-title {
+    font-size: 4.8rem;
+  }
   h2 {
     margin-bottom: 0;
     margin-top: 30px;
@@ -87,5 +90,8 @@ h2 {
   .widden {
     width: 100vw;
     grid-template-columns: 1fr 1fr;
+  }
+  .reset-btn {
+    padding: 10px 30px;
   }
 }
