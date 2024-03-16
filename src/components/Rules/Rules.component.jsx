@@ -14,12 +14,15 @@ const Rules = () => {
                     <div className="rule-show">
                         <div className="rule-header">
                             <h1>RULES</h1>
-                            <img src="/pics/icon-close.svg" alt="close" onClick={handleModal} />
+                            <img src="/pics/icon-close.svg" className="close-icon"  alt="close" onClick={handleModal} />
                         </div>
 
                         <div className="rule-img">
                             <img src="/pics/image-rules.svg" alt="rules image" />
                         </div>
+
+                        <img src="/pics/icon-close.svg" className="close-m-icon"  alt="close" onClick={handleModal} />
+                        
 
                     </div>
                 </Modal>)

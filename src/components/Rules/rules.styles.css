@@ -17,7 +17,8 @@
 
 .rule-show {
   background-color: white;
-  width: 100%;
+  width: 500px;
+  max-width: 100vw;
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -31,7 +32,6 @@
   align-items: center;
   margin-bottom: 3rem;
   width: 100%;
-  padding-inline: 2rem;
 }
 
 .rule-header img {
@@ -42,7 +42,7 @@
 
 .rule-img {
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .rule-img img {
@@ -50,12 +50,34 @@
   height: 100%;
 }
 
-@media (max-width: 500px) {
+.close-m-icon {
+  display: none;
+}
+
+@media (max-width: 530px) {
   .rules {
     justify-content: center;
   }
 
+  .rule-show,
+  .rule-header {
+    justify-content: center;
+  }
+
+  .rule-show {
+    display: flex;
+    gap: 50px;
+  }
+
   .rules-btn {
     margin-right: 0;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .close-m-icon {
+    display: inline;
   }
 }

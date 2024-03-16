@@ -36,12 +36,13 @@ body {
   --big-inner-width: 260px;
   --big-inner-height: 260px;
   --big-img: 130px;
+  --img: 100px;
 }
 
 @media (max-width: 800px) {
   :root {
     --item-sign-width: 200px; /* Item sign width */
-    --item-sign-height: 200px; 
+    --item-sign-height: 200px;
     --big-item-width: 200px;
     --big-item-height: 200px;
     --big-inner-width: 160px;
@@ -66,7 +67,6 @@ body {
     --big-inner-width: 120px;
     --big-inner-height: 120px;
     --big-img: 70px;
+    --img: 55px;
   }
 }
-
-
