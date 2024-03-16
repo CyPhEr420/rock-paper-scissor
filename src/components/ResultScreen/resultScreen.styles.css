@@ -62,6 +62,15 @@ h2 {
   .result {
     order: 3;
     grid-column: span 2;
+    margin-top: 10px;
+  }
+
+  .result-screen {
+    width: 100vw;
+  }
+  .computer-choice-circle {
+    width: 130px;
+    height: 130px;
   }
 
   .player-choice,
@@ -71,11 +80,10 @@ h2 {
 
   h2 {
     margin-bottom: 0;
-    margin-top: 5rem;
+    margin-top: 30px;
   }
   .widden {
     width: 100vw;
     grid-template-columns: 1fr 1fr;
-    height: 65vh;
   }
 }

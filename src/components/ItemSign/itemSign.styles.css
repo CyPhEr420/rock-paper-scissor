@@ -95,3 +95,9 @@
 .span-2 {
   grid-column: 1 / span 2; /* Spans across both columns */
 }
+
+@media (max-width:500px){
+  .inner-circle img {
+    width: 70px;
+  }
+}

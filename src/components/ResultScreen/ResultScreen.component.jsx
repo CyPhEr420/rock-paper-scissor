@@ -5,7 +5,7 @@ import ItemSign from "../ItemSign/ItemSign.component"
 import './resultScreen.styles.css'
 
 // eslint-disable-next-line react/prop-types
-const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handleScore }) => {
+const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset, handleScore }) => {
     const [showComputerChoice, setShowComputerChoice] = useState(false);
     const [showResult, setShowResult] = useState(false);
     const [winnerClass, setWinnerClass] = useState('');
@@ -19,7 +19,7 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
         const timeoutId = setTimeout(() => {
             setShowResult(true)
             setWinnerClass(winner)
-            if(winner === "YOU WIN"){
+            if (winner === "YOU WIN") {
                 handleScore();
             }
         }, 2000);
@@ -27,8 +27,8 @@ const ResultScreen = ({ playerChoice, computerChoice, winner, handleReset,handle
     }, [winner]);
 
 
-   
-console.log(winnerClass === winner, winnerClass, winner)
+
+    console.log(winnerClass === winner, winnerClass, winner)
 
     return (
         <div className={`${showResult ? "widden" : ""} result-screen`} >
@@ -56,9 +56,9 @@ console.log(winnerClass === winner, winnerClass, winner)
                 <div className={`${showComputerChoice ? "" : "computer-choice-circle"}`}></div>
                 {showComputerChoice &&
                     (<ItemSign sign={computerChoice.name} img={computerChoice.img} classes=
-                    {`${showComputerChoice ? `big` : ""} 
-                    ${winnerClass === "YOU LOSE" ? 'winner' 
-                    :  ""} `} />)
+                        {`${showComputerChoice ? `big` : ""} 
+                    ${winnerClass === "YOU LOSE" ? 'winner'
+                                : ""} `} />)
                 }
 
             </div>

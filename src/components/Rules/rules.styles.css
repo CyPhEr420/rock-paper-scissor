@@ -53,6 +53,9 @@
 @media (max-width: 500px) {
   .rules {
     justify-content: center;
-    margin-top: 10rem;
+  }
+
+  .rules-btn {
+    margin-right: 0;
   }
 }

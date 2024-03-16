@@ -55,17 +55,17 @@ body {
 @media (max-width: 500px) {
   :root {
     --main-game-width: 100%; /* Main game width */
-    --main-game-height: 500px; /* Main game height */
-    --item-sign-width: 200px; /* Item sign width */
-    --item-sign-height: 200px; /* Item sign height */
-    --inner-circle-width: 160px;
-    --inner-circle-height: 160px;
-    --inner-circle-gradient: 120px;
-    /* --big-item-width: 200px;
-    --big-item-height: 200px;
-    --big-inner-width: 160px;
-    --big-inner-height: 160px;
-    --big-img: 90px; */
+    --main-game-height: 400px; /* Main game height */
+    --item-sign-width: 130px; /* Item sign width */
+    --item-sign-height: 130px; /* Item sign height */
+    --inner-circle-width: 100px;
+    --inner-circle-height: 100px;
+    --inner-circle-gradient: 100px;
+    --big-item-width: 160px;
+    --big-item-height: 160px;
+    --big-inner-width: 120px;
+    --big-inner-height: 120px;
+    --big-img: 70px;
   }
 }
 

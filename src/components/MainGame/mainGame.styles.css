@@ -16,3 +16,9 @@
 .selected {
   background-image: none;
 }
+
+@media (max-width: 500px) {
+  .game-container {
+    background-size: 300px;
+  }
+}
